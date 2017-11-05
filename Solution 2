@@ -1,0 +1,69 @@
+<!Doctype html>
+<html>
+
+<head>
+    
+    <style type="text/css">
+    
+        .textarea{
+            
+            text-align: right;
+        }
+    
+    
+    </style>
+    </head>
+
+
+    
+    <body>
+        
+        
+        
+        <script type="application/javascript">
+        
+           
+        
+        function aaab(){
+            var i=0;
+            var j=0;
+            var k=0;
+            var text="";
+            var x=document.getElementById('fname').value;
+             for(i=0;i<x;i++)
+                {
+                    
+                    for(j=0;j<x-i-1;j++)
+                        {
+                            
+                            text+="  " ;
+                            
+                        }
+                        
+                    for(k=0;k<i+1;k++)
+                        {
+                            
+                            text+="#";
+                        }
+                    text+="\n";
+                    document.getElementById('txtarea').innerHTML=text;
+                }
+            
+            alert(text);
+        }
+        </script>
+    
+    <form>
+        
+        ENTER VALUE OF n:<input type="text" name="fname" id="fname">
+        <button onclick="aaab()">Show</button>
+        <hr/>
+        <textarea rows="200" cols="200" id="txtarea"  ></textarea>
+        
+        </form>
+    
+    
+    
+    </body>
+    
+</html>
