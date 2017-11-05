@@ -6,6 +6,10 @@ Aureliso De Rosa
 John Doe
 
 What we are doing is creating an object using Javascript and using console.log to display the output on the browser console. 
-First we are calling the function "getFullname" which prints the value stored in the variable "fullname" in the "prop" section.
-We are then storing the function call in a new variable "var".Then using console we are calling the function using the new 
-variable without getting int the object and thus the function returns the global variabke "fullname" with the value "JOHN DOE".
+First we are calling the function "getFullname" which prints the value stored in the variable "fullname" in the "prop" section
+i.e, in the first function call it enters the object and "this.fullname" points to the variable fullname in the prop: section 
+which is "Aureliso De Rosa".
+
+We are then storing the function call in a new variable "test".Then using console we are calling the function using the new 
+variable "test" without entering into the object and thus the function returns the global variable "fullname" with the value 
+"JOHN DOE". 
